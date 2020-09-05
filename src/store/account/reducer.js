@@ -36,6 +36,7 @@ export default reducer(initState, {
   [types.LOGIN_SUCCESS]: (state, action) => {
     return {
       ...state,
+      error: '',
       token: action.payload,
       user: {
         ...action.payload
